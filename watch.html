@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <script src="bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular-route.js"></script>
+    <script src="angular.min.js"></script>
+</head>
+
+<body ng-app="myApp">
+    <header>
+        <div class="container-fluid bg-black  text-white " style="text-align: center;  ">
+            <p>LOCWATCH</p>
+        </div>
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container-fluid">
+              <a href="index.html">
+                <img src="image/logo.png" class="rounded-circle " style="width:60px; margin-right: 30px;" alt="Cinque Terre">
+              </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto  my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
+                        <li class="nav-item">
+                            <a class="nav-link" href="watch.html">WATCHES</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="accessories.html">ACCESSORIES</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                SERVICE
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="services.html">SELL YOUR WATCH</a></li>
+                                <li><a class="dropdown-item" href="services.html">SERVICE YOU WATCH</a></li>
+                                <li><a class="dropdown-item" href="services.html">WATCH REFURBISHING</a></li>
+                                <li><a class="dropdown-item" href="valuations.html">VALUATIONS</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link disabled">ABOUT US</a>
+                        </li>
+                        <a href="shop.html">
+                          <img src="image/cart3.svg" style="width: 33px;margin-left: 20px ;" alt="">
+                        </a>
+                        
+                    </ul>
+                    <form class="d-flex" role="search">
+                        <input class="form-control me-2 " type="search" style="width: 300px;" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-outline-success" type="submit" >Search</button>
+                    </form>
+                </div>
+      
+            </div>
+        </nav>
+    </header>
+
+    <section >
+        <hr>
+        <div class="container-fluid" ng-controller="productCtrl">
+            <div class="row  mx-2 my-5">
+                <div class="col-2 " style="border-radius: 0;">
+                    <h5 style=" margin-bottom: 18px;">Filters</h5>
+                    <h5>Brand</h5>
+                    <hr>
+                    <a href="" class="nav-link">Rolex</a>
+                    <br>
+                    <a href="" class="nav-link">Omega</a>
+                    <br>
+                    <a href="" class="nav-link">Audemars Piguet</a>
+                    <br>
+                    <a href="" class="nav-link">IWC</a>
+                    <br>
+                    <a href="" class="nav-link">Cartier</a>
+                    <br>
+                    <a href="" class="nav-link"> Patek Philippe</a>
+                    <br>
+                    <a href="" class="nav-link">BREITLING</a>
+                    <p></p>
+                    <h5>Price Range</h5>
+                    <hr>
+                    <div class="form-check">
+                        <input type="radio" class="form-check-input" id="radio1" name="optradio1" value="option1"
+                            checked>Under 500 USD
+                        <label class="form-check-label" for="radio1"></label>
+                    </div>
+                    <div class="form-check">
+                        <input type="radio" class="form-check-input" id="radio2" name="optradio1" value="option2">500 -
+                        3000 USD
+                        <label class="form-check-label" for="radio2"></label>
+                    </div>
+                    <div class="form-check">
+                        <input type="radio" class="form-check-input" id="radio3" name="optradio1" value="option2">3000 -
+                        10,000 USD
+                        <label class="form-check-label" for="radio2"></label>
+                    </div>
+                    <div class="form-check">
+                        <input type="radio" class="form-check-input" id="radio3" name="optradio1" value="option2">Over
+                        10,000 USD
+                        <label class="form-check-label"></label>
+                    </div>
+
+                    <h5>Case Size</h5>
+                    <hr>
+                    <div class="form-check">
+                        <input type="radio" class="form-check-input" id="radio1" name="optradio2" value="option1"
+                            checked>25mm-30mm
+                        <label class="form-check-label" for="radio1"></label>
+                    </div>
+                    <div class="form-check">
+                        <input type="radio" class="form-check-input" id="radio2" name="optradio2"
+                            value="option2">31mm-35mm
+                        <label class="form-check-label" for="radio2"></label>
+                    </div>
+                    <div class="form-check">
+                        <input type="radio" class="form-check-input" id="radio3" name="optradio2"
+                            value="option2">36mm-40mm
+                        <label class="form-check-label" for="radio2"></label>
+                    </div>
+                    <div class="form-check">
+                        <input type="radio" class="form-check-input" id="radio3" name="optradio2" value="option2">41mm
+                        and over
+                        <label class="form-check-label"></label>
+                    </div>
+                    <h5>Bracelet Type</h5>
+                    <hr>
+                    <div class="form-check">
+                        <input type="radio" class="form-check-input" id="radio1" name="optradio3" value="option1"
+                            checked>Rubber
+                        <label class="form-check-label" for="radio1"></label>
+                    </div>
+                    <div class="form-check">
+                        <input type="radio" class="form-check-input" id="radio2" name="optradio3" value="option2">Metal
+                        <label class="form-check-label" for="radio2"></label>
+                    </div>
+                    <div class="form-check">
+                        <input type="radio" class="form-check-input" id="radio3" name="optradio3" value="option2">Nato
+                        <label class="form-check-label" for="radio2"></label>
+                    </div>
+                    <h5>Material</h5>
+                    <hr>
+                    <div class="form-check">
+                        <input type="radio" class="form-check-input" id="radio1" name="optradio" value="option1"
+                            checked>Stainless Steel
+                        <label class="form-check-label" for="radio1"></label>
+                    </div>
+                    <div class="form-check">
+                        <input type="radio" class="form-check-input" id="radio2" name="optradio" value="option2">Ceramic
+                        <label class="form-check-label" for="radio2"></label>
+                    </div>
+                    <div class="form-check">
+                        <input type="radio" class="form-check-input" id="radio3" name="optradio"
+                            value="option2">Platinum
+                        <label class="form-check-label" for="radio2"></label>
+                    </div>
+                    <div class="form-check">
+                        <input type="radio" class="form-check-input" id="radio2" name="optradio" value="option2">Yellow
+                        Gold
+                        <label class="form-check-label" for="radio2"></label>
+                    </div>
+                    <div class="form-check">
+                        <input type="radio" class="form-check-input" id="radio3" name="optradio" value="option2">White
+                        Gold
+                        <label class="form-check-label" for="radio2"></label>
+                    </div>
+                    <div class="form-check">
+                        <input type="radio" class="form-check-input" id="radio2" name="optradio" value="option2">Rose
+                        Gold
+                        <label class="form-check-label" for="radio2"></label>
+                    </div>
+                    <div class="form-check">
+                        <input type="radio" class="form-check-input" id="radio3" name="optradio" value="option2">PVD
+                        <label class="form-check-label" for="radio2"></label>
+                    </div>
+
+                </div>
+                <div class="col-10">
+                    <p>Home > All Watches</p>
+                    <h3>ALL WATCHES</h3>
+
+                    <div style="background-color: rgb(242, 243, 244); padding: 5px; ">
+                        <div class="row">
+                            <div class="col-8">
+                                <ul class="nav">
+                                    <p style="margin: 5px; font-size: 20px;"> Sort by</p>
+                                    <li class="nav-item">
+                                        <a class="nav-link text-dark" href="#">HOT</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link text-dark" href="#">Lates</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link text-dark" href="#">Top Sales</a>
+                                    </li>
+                                    <div class="dropdown">
+                                        <button type="button" class="btn dropdown-toggle" data-bs-toggle="dropdown">
+                                            Price
+                                        </button>
+                                        <ul class="dropdown-menu">
+                                            <li><a class="dropdown-item" href="#" ng-click="tang()">Low to High</a></li>
+                                            <li><a class="dropdown-item" href="#" ng-click="giam()" >High to low</a></li>
+                                        </ul>
+                                        
+                                    </div>
+                                </ul>
+
+                            </div>
+
+                            <div class="col-4 px-0 mt-2">
+                                1/50
+                                <button><</button>
+                                <button>></button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="container section2 ">
+                        <div class="row  mt-5 ">
+                            <div class="card col-md-3 col-sm-6 " ng-repeat="p in myData | orderBy : sort">
+                                <a href="product.html">
+                                    <img src="{{p.Image}}" class="card-img-top" alt="...">
+                                </a>
+                                <div class="card-body mt-3">
+                                    <h5 class="card-title">{{p.name}}</h5>
+                                    <p class="card-text">{{p.Price }} VND</p>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                </div>
+
+
+            </div>
+            <div class="d-flex justify-content-center m-5">
+                <ul class="pagination ">
+                    <li class="page-item disabled"><a class="page-link" href="#">Previous</a></li>
+                    <li class="page-item active"><a class="page-link" href="#">1</a></li>
+                    <li class="page-item"><a class="page-link" href="#">2</a></li>
+                    <li class="page-item"><a class="page-link" href="#">3</a></li>
+                    <li class="page-item"><a class="page-link" href="#">Next</a></li>
+                </ul>
+
+            </div>
+
+        </div>
+
+        </div>
+    </section>
+
+
+    <footer class="container-fluid bg-black p-4 text-white-50">
+        <div class="container mt-5">
+          <div class="row">
+            
+            <div class="col-md-3">
+              <h5>CUSTOMER CARE</h5>
+              <br>
+              <p>Returns Policy</p>
+              <br>
+              <p>Deposit Policy</p>
+              <br>
+              <p>Privacy Policy</p>
+              <br>
+              <p>Shipping Policy</p>
+              <br>
+              <p>FAQs</p>
+            </div>
+            <div class="col-md-3">
+              <h5>Service</h5>
+              <br>
+              <p>SELL YOUR WATCH</p>
+              <br>
+              <p>SERVICE YOU WATCH</p>
+              <br>
+              <p>WATCH REFURBISHING</p>
+              <br>
+              <p>VALUATIONS</p>
+            </div>
+            <div class="col-md-3 mb-4">
+              <h5>Contact Us</h5>
+              <br>
+              <p>loctmps23034@fpt.edu.vn</p>
+              <br>
+              <p>Copyright © 2023 Locwatch.</p>
+              <br>
+              <p>Web Design by loctmps23034</p>
+            </div>
+            <div class=" col-md-3 ">
+              <img src="image/logo.png" class="rounded-circle " style="width:90px; margin-bottom: 30px; " alt="Cinque Terre">
+              <h5>FOLLOW US</h5>
+              <br>
+              <img src="image/facebook.svg" alt="" style="background-color: rgb(167, 166, 166);width: 37px; margin: 2px;" class="rounded">
+              <img src="image/twitter.svg" alt="" style="background-color: rgb(167, 166, 166);width: 37px; margin: 2px;" class="rounded">
+              <img src="image/youtube.svg" alt="" style="background-color: rgb(167, 166, 166);width: 37px; margin: 2px;" class="rounded">
+              <img src="image/envelope-fill.svg" alt="" style="background-color: rgb(167, 166, 166);width: 37px; margin: 2px;" class="rounded">
+              <img src="image/instagram.svg" alt="" style="background-color: rgb(167, 166, 166);width: 37px;margin: 2px;" class="rounded">
+            </div>
+          </div>
+        </div>
+      </footer>
+
+</body>
+
+<script>
+    var app = angular.module('myApp', []);
+    app.controller('productCtrl', function ($scope, $http) {
+        $scope.tang = function () {
+            $scope.sort = 'Price';
+        }
+        $scope.giam = function () {
+            $scope.sort = '-Price';
+        }
+        
+        $http.get("products.js").then(function (response) {
+            $scope.myData = response.data;
+        });
+    });
+</script>
+
+</html>

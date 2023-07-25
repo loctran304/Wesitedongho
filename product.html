@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <script src="bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular-route.js"></script>
+    <script src="angular.min.js"></script>
+</head>
+
+<body ng-app="myApp">
+    <header>
+        <div class="container-fluid bg-black  text-white " style="text-align: center;  ">
+            <p>LOCWATCH</p>
+        </div>
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container-fluid">
+              <a href="index.html">
+                <img src="image/logo.png" class="rounded-circle " style="width:60px; margin-right: 30px;" alt="Cinque Terre">
+              </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto  my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
+                        <li class="nav-item">
+                            <a class="nav-link" href="watch.html">WATCHES</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="accessories.html">ACCESSORIES</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                SERVICE
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="services.html">SELL YOUR WATCH</a></li>
+                                <li><a class="dropdown-item" href="services.html">SERVICE YOU WATCH</a></li>
+                                <li><a class="dropdown-item" href="services.html">WATCH REFURBISHING</a></li>
+                                <li><a class="dropdown-item" href="valuations.html">VALUATIONS</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link disabled">ABOUT US</a>
+                        </li>
+                        <a href="shop.html">
+                          <img src="image/cart3.svg" style="width: 33px;margin-left: 20px ;" alt="">
+                        </a>
+                        
+                    </ul>
+                    <form class="d-flex" role="search">
+                        <input class="form-control me-2 " type="search" style="width: 300px;" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-outline-success" type="submit">Search</button>
+                    </form>
+                </div>
+      
+            </div>
+        </nav>
+        <hr>
+    </header>
+
+    <section>
+        <div class="container mt-5">
+            <div>
+                <p>Home > Watches > Rolex</p>
+            </div>
+            <div class="card mb-3 px-0" style="height: 520px; border: 0; ">
+                <div class="row g-0">
+                    <div class="col-md-5">
+                        <img src="image/hinhc1.png" class="img-fluid rounded-start" style="height: 500px; " alt="...">
+                    </div>
+                    <div class="col-md-7 ">
+                        <div class="card-body py-0">
+                            <a class="nav-link" style="font-size: 15px; margin-bottom: 20px; font-weight: lighter;"
+                                href="watch.html">« Back to Watches</a>
+                            <h5 class="card-title">Rolex Datejust 41</h5>
+                            <p class="card-text">By Rolex</p>
+                            <p class="card-text mt-3">
+                                We are pleased to present this Rolex DateJust 41, reference 126303.
+                            </p>
+                            <p class="card-text">This watch features a 41mm Steel & 18ct Yellow Gold Case with a
+                                matching Oyster
+                                Bracelet. The Domed/Smooth Bezel surrounds a Silver dial.</p>
+                            <p class="card-text">
+                                This watch is dated from 2022 and comes as a full set.
+                            </p>
+                            <label for="">Quantity :</label>
+                            <br>
+                            
+                            <select class="form-select mt-2" style="width: 70px; border-radius: 0;">
+                                <option>1</option>
+                                <option>2</option>
+                                <option>3</option>
+                                <option>4</option>
+                            </select>
+                            <label for="" class="mt-2">Price :</label>
+                            <p class="card-text " style="font-size: 30px;font-weight: lighter;">
+                                314,262,000 VND
+                            </p>
+                                <button type="button" class="btn btn-dark mt-3" style="border-radius: 0; width: 230px; height: 53px;">ADD TO CARTS</button>
+                            <a href="shop.html">
+                                <button type="button" class="btn btn-dark mt-3" style="border-radius: 0; width: 230px; height: 53px;">BUY</button>
+                            </a>
+
+                        </div>
+                    </div>        
+                </div>  
+            </div>
+            <div class="row mt-5">
+                <div class="col-md-5 ">
+                </div>
+                <div  class="col-md-5  ">
+                    <h5 >WATCHES DETAILS</h3>
+                    <div class="row mt-3" >
+                        <h6 class="col-7">Reference</h6>
+                        <p class="col-5">126303</p>
+                        <hr>
+                        <h6 class="col-7">Movement</h6>
+                        <p class="col-5">Automatic</p>
+                        <hr>
+                        <h6 class="col-7">Caliber</h6>
+                        <p class="col-5">3235</p>
+                        <hr>
+                        <h6 class="col-7">Dial</h6>
+                        <p class="col-5">Silver</p>
+                        <hr>
+                        <h6 class="col-7">Size (Case)</h6>
+                        <p class="col-5">41mm</p>
+                        <hr>
+                        <h6 class="col-7">Material (Case)</h6>
+                        <p class="col-5">Steel & 18ct Gold</p>
+                        <hr>
+                        <h6 class="col-7">Bracelet</h6>
+                        <p class="col-5">Steel & Gold Oyster</p>
+                        <hr>
+                        <h6 class="col-7">Glass</h6>
+                        <p class="col-5">Sapphire</p>
+                        <hr>
+                    <p></p>
+                    </div>
+                </div>
+
+            </div>
+            
+            <h5 >CUSTOMS NOTICE</h3>
+            <p class="card-text" >Despatched from Northern Ireland which is Tax Free for UK and EU but anyone outside these regions may incur and will be responsible for taxes/import fees in their home countryt</p>
+        </div>
+        <hr class="mt-5">
+    </section>
+
+    <section>
+        <div class="container section2 m-5">
+            <div>
+                <h4>RELATED PRODUCTS</h3>
+            </div>
+            <div class="row  mt-5 " ng-controller="productCtrl">
+                <div class="card col-md-3 col-6 " ng-repeat="p in myData | limitTo : 4:0 ">
+                    <a href="product.html">
+                        <img src="{{p.Image}}" class="card-img-top" alt="...">
+                    </a>
+
+                    <div class="card-body mt-3">
+                        <h5 class="card-title">{{p.name}}</h5>
+                        <p class="card-text">{{p.Price}}</p>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+
+
+
+    <footer class="container-fluid bg-black p-4 text-white-50">
+        <div class="container mt-5">
+          <div class="row">
+            
+            <div class="col-md-3">
+              <h5>CUSTOMER CARE</h5>
+              <br>
+              <p>Returns Policy</p>
+              <br>
+              <p>Deposit Policy</p>
+              <br>
+              <p>Privacy Policy</p>
+              <br>
+              <p>Shipping Policy</p>
+              <br>
+              <p>FAQs</p>
+            </div>
+            <div class="col-md-3">
+              <h5>Service</h5>
+              <br>
+              <p>SELL YOUR WATCH</p>
+              <br>
+              <p>SERVICE YOU WATCH</p>
+              <br>
+              <p>WATCH REFURBISHING</p>
+              <br>
+              <p>VALUATIONS</p>
+            </div>
+            <div class="col-md-3 mb-4">
+              <h5>Contact Us</h5>
+              <br>
+              <p>loctmps23034@fpt.edu.vn</p>
+              <br>
+              <p>Copyright © 2023 Locwatch.</p>
+              <br>
+              <p>Web Design by loctmps23034</p>
+            </div>
+            <div class=" col-md-3 ">
+              <img src="image/logo.png" class="rounded-circle " style="width:90px; margin-bottom: 30px; " alt="Cinque Terre">
+              <h5>FOLLOW US</h5>
+              <br>
+              <img src="image/facebook.svg" alt="" style="background-color: rgb(167, 166, 166);width: 37px; margin: 2px;" class="rounded">
+              <img src="image/twitter.svg" alt="" style="background-color: rgb(167, 166, 166);width: 37px; margin: 2px;" class="rounded">
+              <img src="image/youtube.svg" alt="" style="background-color: rgb(167, 166, 166);width: 37px; margin: 2px;" class="rounded">
+              <img src="image/envelope-fill.svg" alt="" style="background-color: rgb(167, 166, 166);width: 37px; margin: 2px;" class="rounded">
+              <img src="image/instagram.svg" alt="" style="background-color: rgb(167, 166, 166);width: 37px;margin: 2px;" class="rounded">
+            </div>
+          </div>
+        </div>
+      </footer>
+
+</body>
+
+<script>
+    var app = angular.module('myApp', []);
+    app.controller('productCtrl', function ($scope, $http) {
+        $scope.tang = function () {
+            $scope.sort = 'Price';
+        }
+        $scope.giam = function () {
+            $scope.sort = '-Price';
+        }
+
+        $http.get("products.js").then(function (response) {
+            $scope.myData = response.data;
+        });
+    });
+</script>
+
+</html>
